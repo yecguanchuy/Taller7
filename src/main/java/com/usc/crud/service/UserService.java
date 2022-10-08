@@ -14,9 +14,9 @@ public class UserService {
     @Autowired
     private UserRepository repository;
 
-    public Optional<Empleado> finByUser(Empleado empleado){
+    public Optional<Empleado> finByUser(Long id){
 
-        return repository.findById(empleado.getId());
+        return repository.findById(id);
 
     }
     public Empleado guardarUser(Empleado empleado){

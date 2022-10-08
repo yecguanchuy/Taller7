@@ -14,9 +14,9 @@ public class UserController {
 
 
     @GetMapping("/consultar/{id}")
-    public ResponseEntity<?> filtrar(@PathVariable Empleado empleado){
+    public ResponseEntity<?> filtrar(@PathVariable Long id){
 
-        return ResponseEntity.ok(service.finByUser(empleado));
+        return ResponseEntity.ok(service.finByUser(id));
 
     }
 
